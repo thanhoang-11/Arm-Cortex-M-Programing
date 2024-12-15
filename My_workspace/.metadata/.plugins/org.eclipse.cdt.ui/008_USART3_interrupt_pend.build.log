@@ -1,0 +1,10 @@
+18:30:17 **** Incremental Build of configuration Debug for project 008_USART3_interrupt_pend ****
+make -j8 all 
+arm-none-eabi-size  008_USART3_interrupt_pend.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3388	     92	   1900	   5380	   1504	008_USART3_interrupt_pend.elf
+Finished building: default.size.stdout
+ 
+
+18:30:19 Build Finished. 0 errors, 0 warnings. (took 1s.501ms)
+

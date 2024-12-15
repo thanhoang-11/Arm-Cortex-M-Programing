@@ -1,0 +1,20 @@
+15:02:24 **** Build of configuration Debug for project 009_interrupt_priority ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:5:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    5 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "009_interrupt_priority.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\ASUS\Documents\Cortex-Mx_Programing\My_workspace\interrupt_priority\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009_interrupt_priority.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 009_interrupt_priority.elf
+ 
+arm-none-eabi-size  009_interrupt_priority.elf 
+arm-none-eabi-objdump -h -S 009_interrupt_priority.elf  > "009_interrupt_priority.list"
+   text	   data	    bss	    dec	    hex	filename
+   3580	    104	   1904	   5588	   15d4	009_interrupt_priority.elf
+Finished building: default.size.stdout
+ 
+Finished building: 009_interrupt_priority.list
+ 
+
+15:02:28 Build Finished. 0 errors, 1 warnings. (took 3s.832ms)
+

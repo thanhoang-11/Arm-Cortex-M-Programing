@@ -1,0 +1,31 @@
+11:10:54 **** Build of configuration Debug for project 011_SVC_number ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:7:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    7 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "011_SVC_number.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\ASUS\Documents\Cortex-Mx_Programing\My_workspace\011_SVC_number\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011_SVC_number.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 011_SVC_number.elf
+ 
+arm-none-eabi-size  011_SVC_number.elf 
+arm-none-eabi-objdump -h -S 011_SVC_number.elf  > "011_SVC_number.list"
+   text	   data	    bss	    dec	    hex	filename
+   5232	     92	   1900	   7224	   1c38	011_SVC_number.elf
+Finished building: default.size.stdout
+ 
+Finished building: 011_SVC_number.list
+ 
+11:11:04 **** Incremental Build of configuration Debug for project 011_SVC_number ****
+make -j8 all 
+arm-none-eabi-size  011_SVC_number.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5232	     92	   1900	   7224	   1c38	011_SVC_number.elf
+Finished building: default.size.stdout
+ 
+15:41:09 **** Incremental Build of configuration Debug for project 011_SVC_number ****
+make -j8 all 
+arm-none-eabi-size  011_SVC_number.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5232	     92	   1900	   7224	   1c38	011_SVC_number.elf
+Finished building: default.size.stdout
+ 

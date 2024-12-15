@@ -1,0 +1,10 @@
+15:41:09 **** Incremental Build of configuration Debug for project 011_SVC_number ****
+make -j8 all 
+arm-none-eabi-size  011_SVC_number.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5232	     92	   1900	   7224	   1c38	011_SVC_number.elf
+Finished building: default.size.stdout
+ 
+
+15:41:10 Build Finished. 0 errors, 0 warnings. (took 1s.797ms)
+

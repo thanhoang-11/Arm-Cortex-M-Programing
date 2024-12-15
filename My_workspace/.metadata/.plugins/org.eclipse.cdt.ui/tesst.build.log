@@ -1,0 +1,20 @@
+22:02:31 **** Incremental Build of configuration Debug for project tesst ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:7:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    7 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "tesst.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\ASUS\Documents\Cortex-Mx_Programing\My_workspace\tesst\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tesst.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tesst.elf
+ 
+arm-none-eabi-size  tesst.elf 
+arm-none-eabi-objdump -h -S tesst.elf  > "tesst.list"
+   text	   data	    bss	    dec	    hex	filename
+   5112	     92	   1900	   7104	   1bc0	tesst.elf
+Finished building: default.size.stdout
+ 
+Finished building: tesst.list
+ 
+
+22:02:32 Build Finished. 0 errors, 1 warnings. (took 1s.95ms)
+

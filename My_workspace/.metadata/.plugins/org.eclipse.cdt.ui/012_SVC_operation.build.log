@@ -1,0 +1,49 @@
+22:17:48 **** Incremental Build of configuration Debug for project 012_SVC_operation ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:6:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    6 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:13:17: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint32_t *' {aka 'long unsigned int *'} [-Wformat=]
+   13 |         scanf("%u %u", &data1, &data2);
+      |                ~^      ~~~~~~
+      |                 |      |
+      |                 |      uint32_t * {aka long unsigned int *}
+      |                 unsigned int *
+      |                %lu
+../Src/main.c:13:20: warning: format '%u' expects argument of type 'unsigned int *', but argument 3 has type 'uint32_t *' {aka 'long unsigned int *'} [-Wformat=]
+   13 |         scanf("%u %u", &data1, &data2);
+      |                   ~^           ~~~~~~
+      |                    |           |
+      |                    |           uint32_t * {aka long unsigned int *}
+      |                    unsigned int *
+      |                   %lu
+../Src/main.c:18:17: warning: format '%u' expects argument of type 'unsigned int *', but argument 2 has type 'uint8_t *' {aka 'unsigned char *'} [-Wformat=]
+   18 |         scanf("%u", &option);
+      |                ~^   ~~~~~~~
+      |                 |   |
+      |                 |   uint8_t * {aka unsigned char *}
+      |                 unsigned int *
+      |                %hhu
+../Src/main.c:23:29: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   23 |         printf("Result is: %u\n", result);
+      |                            ~^     ~~~~~~
+      |                             |     |
+      |                             |     uint32_t {aka long unsigned int}
+      |                             unsigned int
+      |                            %lu
+arm-none-eabi-gcc -o "012_SVC_operation.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\ASUS\Documents\Cortex-Mx_Programing\My_workspace\012_SVC_operation\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="012_SVC_operation.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 012_SVC_operation.elf
+ 
+arm-none-eabi-size  012_SVC_operation.elf 
+arm-none-eabi-objdump -h -S 012_SVC_operation.elf  > "012_SVC_operation.list"
+   text	   data	    bss	    dec	    hex	filename
+   8592	     92	   1900	  10584	   2958	012_SVC_operation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 012_SVC_operation.list
+ 
+
+22:17:51 Build Finished. 0 errors, 5 warnings. (took 2s.853ms)
+

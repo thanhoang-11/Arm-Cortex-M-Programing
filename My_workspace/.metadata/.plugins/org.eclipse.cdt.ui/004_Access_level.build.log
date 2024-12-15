@@ -1,0 +1,10 @@
+15:21:26 **** Build of configuration Debug for project 004_Access_level ****
+make -j8 all 
+arm-none-eabi-size  004_Access_level.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3644	     92	   1900	   5636	   1604	004_Access_level.elf
+Finished building: default.size.stdout
+ 
+
+15:21:27 Build Finished. 0 errors, 0 warnings. (took 525ms)
+

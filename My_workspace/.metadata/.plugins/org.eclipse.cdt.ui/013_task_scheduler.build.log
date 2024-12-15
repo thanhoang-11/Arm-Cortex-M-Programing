@@ -1,0 +1,30 @@
+15:28:11 **** Incremental Build of configuration Debug for project 013_task_scheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:2:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+    2 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "013_task_scheduler.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\ASUS\Documents\Cortex-Mx_Programing\My_workspace\013_task_scheduler\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="013_task_scheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: 013_task_scheduler.elf has a LOAD segment with RWX permissions
+Finished building target: 013_task_scheduler.elf
+ 
+arm-none-eabi-size  013_task_scheduler.elf 
+arm-none-eabi-objdump -h -S 013_task_scheduler.elf  > "013_task_scheduler.list"
+arm-none-eabi-objcopy  -O ihex 013_task_scheduler.elf  "013_task_scheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+   4992	    104	   1984	   7080	   1ba8	013_task_scheduler.elf
+arm-none-eabi-objcopy  -O binary 013_task_scheduler.elf  "013_task_scheduler.bin"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O srec 013_task_scheduler.elf  "013_task_scheduler.srec"
+ 
+Finished building: 013_task_scheduler.list
+Finished building: 013_task_scheduler.hex
+ 
+ 
+Finished building: 013_task_scheduler.srec
+Finished building: 013_task_scheduler.bin
+ 
+ 
+
+15:28:13 Build Finished. 0 errors, 2 warnings. (took 2s.220ms)
+

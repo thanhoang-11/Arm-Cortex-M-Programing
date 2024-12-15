@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;inline_assembly_1&apos; to &apos;001_inline_assembly_1&apos;" description="Rename resource &apos;inline_assembly_1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/inline_assembly_1" name="001_inline_assembly_1" stamp="1725030227626" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;inline_assembly_2&apos; to &apos;002_inline_assembly_2&apos;" description="Rename resource &apos;inline_assembly_2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/inline_assembly_2" name="002_inline_assembly_2" stamp="1725030238724" updateReferences="true"/>
+</session>

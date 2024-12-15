@@ -1,0 +1,12 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_Operation_mode,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_stack_MSP_and_PSP,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008_USART3_interrupt_pend,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:005_T_Bit,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:004_Access_level,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:010_falut_exception_generate,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:012_SVC_operation,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:task_scheduler Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:013_task_scheduler,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:011_SVC_number Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_Operation_mode/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:003_Operation_mode/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:012_SVC_operation/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:012_SVC_operation/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:inline_assembly_1/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:inline_assembly_1/activeLaunchTarget=null\:---
+org.eclipse.launchbar.core.descriptorType.default\:011_SVC_number\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

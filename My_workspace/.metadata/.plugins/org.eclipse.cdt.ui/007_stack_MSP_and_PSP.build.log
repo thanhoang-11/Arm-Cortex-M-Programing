@@ -1,0 +1,10 @@
+09:43:28 **** Build of configuration Debug for project 007_stack_MSP_and_PSP ****
+make -j8 all 
+arm-none-eabi-size  007_stack_MSP_and_PSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5188	     92	   1900	   7180	   1c0c	007_stack_MSP_and_PSP.elf
+Finished building: default.size.stdout
+ 
+
+09:43:30 Build Finished. 0 errors, 0 warnings. (took 1s.823ms)
+
